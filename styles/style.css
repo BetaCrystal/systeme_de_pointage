@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    font-family: 'Tahoma', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    background-color: rebeccapurple;
+    color: white;
+    padding: 15px 0;
+}
+
+h1{
+    font-size: 32px;
+    margin: 0 0 0 8vw;
+}
+
+h2{
+    font-size: 30px;
+    color: indigo;
+    margin-top: 5vh;
+}
+
+input, select{
+    border: solid 1px indigo;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin: 0 5vw;
+    flex: none;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px mediumpurple;
+    margin-top: 15px;
+    align-items: center;
+    padding: 6vh 0;
+    border-radius: 15px;
+}
+
+.login-form .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.ticket-form{
+    display: flex;
+}
+
+button{
+    border-radius: 5px;
+    padding: 7px 16px;
+    font-size: 18px;
+    border: 2px solid indigo;
+    background-color: indigo;
+    color: white;
+}
+
+@media (max-width: 425px){
+  .login-form .row{
+    flex-direction: column;
+  }
+
+  label{
+    margin: 20px 7vw;
+  }
+}
