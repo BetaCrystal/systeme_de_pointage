@@ -46,5 +46,5 @@ CE QUE J'AURAIS PU AMELIORER AVEC PLUS DE TEMPS :
 
 ------------------------------------------------------------------------------
 POURQUOI LE WEB M'INTERESSE :
-Car c'est un outil que j'utilise tous les jours. Mieux le comprendre et mieux comprendre ses dangers me permet d'être plus vigilante sur mes projets et me poser des questions de sécurité de mon code. J'aime plus particulièrement l'aspect design, UX/UI.
-Cette alternance pourrait tout d'abord mieux m'intégrer dans le monde professionnel, mais aussi me permettre d'apprendre d'autres développeurs expérimentés et découvrir de nouvelles méthodes de travail. L'alternance m'apporterait aussi des connaissances utiles à ma formation et que je pourrais aussi utiliser dans de futurs projets.
+Car c'est un outil que j'utilise tous les jours. Mieux le comprendre et mieux comprendre ses dangers me permet d'être plus vigilante sur mes projets et de me poser des questions de sécurité de mon code. J'aime plus particulièrement l'aspect design, UX/UI.
+Cette alternance pourrait tout d'abord mieux m'intégrer dans le monde professionnel, mais aussi me permettre d'apprendre d'autres développeurs expérimentés et découvrir de nouvelles méthodes de travail. L'alternance m'apporterait aussi des connaissances utiles à ma formation et que je pourrais utiliser dans de futurs projets.
