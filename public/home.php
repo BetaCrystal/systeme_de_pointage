@@ -24,35 +24,40 @@ $requete = $connexion->prepare('
 <!--FORMULAIRE DE POINTAGE-->
 <div>
     <h2>Enregistrer un billet</h2>
-    <form action='' method="POST">
+    <form action='' method="POST" class='ticket-form'>
         <?php
             if (!empty($erreurs['horaires'])) {
-                echo "<j class='erreur'>{$erreurs['horaires']}</j></br>";
+                echo "<p class='error'>{$erreurs['horaires']}</p></br>";
             }
         ?>
-        <label for='heure_debut'>Heure de début :</label>
-        <input type='time' name='heure_debut' id='heure_debut'/>
+        <div class='row' style='padding: 0 0 5vh;'>
+            <label for='heure_debut'>Heure de début :
+                <input type='time' name='heure_debut' id='heure_debut'/>
+            </label>
 
-        <label for='heure_fin'>Heure de fin :</label>
-        <input type='time' name='heure_fin' id='heure_fin'/>
+            <label for='heure_fin'>Heure de fin :
+                <input type='time' name='heure_fin' id='heure_fin'/>
+            </label>
+        </div>
 
-        <label for='type'>Arrivée/Départ :*</label>
-        <?php
-            if (!empty($erreurs['type'])) {
-                echo "<j class='erreur'>{$erreurs['type']}</j></br>";
-            }
-        ?>
-        <select name='type' id='type'>
-            <?php foreach ($types as $type): ?>
-                    <option value="<?php echo htmlspecialchars($type['id']);?>">
-                        <?php echo htmlspecialchars($type['nom']); ?>
-                    </option>
-                <?php endforeach; ?>
-        </select>
+        <label for='type' style='padding-bottom: 7vh;'>Arrivée/Départ :*
+            <?php
+                if (!empty($erreurs['type'])) {
+                    echo "<p class='error'>{$erreurs['type']}</p></br>";
+                }
+            ?>
+            <select name='type' id='type'>
+                <?php foreach ($types as $type): ?>
+                        <option value="<?php echo htmlspecialchars($type['id']);?>">
+                            <?php echo htmlspecialchars($type['nom']); ?>
+                        </option>
+                    <?php endforeach; ?>
+            </select>
+        </label>
 
         <?php
             if (!empty($succes['ajout'])) {
-                echo "<j class='erreur'>{$succes['ajout']}</j></br>";
+                echo "<p class='error'>{$succes['ajout']}</p></br>";
             }
         ?>
         <button type='submit'>Enregistrer</button>

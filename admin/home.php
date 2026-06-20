@@ -17,7 +17,7 @@ include '../elements/header.php';
 <!--LISTE DES BILLETS-->
 <div>
     <h2>Liste des billets</h2>
-    <li>
+    <div class='ticket-list'>
         <?php
         //$billets apparait comme ayant une erreur dans le code. Le code fonctionne tout de même.
         foreach($billets as $billet){
@@ -37,5 +37,5 @@ include '../elements/header.php';
             </li>';
         } ?>
 
-    </li>
+</div>
 </div>

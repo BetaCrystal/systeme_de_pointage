@@ -11,7 +11,7 @@ include '../elements/header.php';
         <label for='nom_utilisateur'>Votre identifiant :*
         <?php
                 if (!empty($erreurs['nom_utilisateur'])) {
-                    echo "<j class='erreur'>{$erreurs['nom_utilisateur']}</j></br>";
+                    echo "<p class='error'>{$erreurs['nom_utilisateur']}</p></br>";
                 }
         ?>
         <input type='text' name='nom_utilisateur' id='nom_utilisateur'/>
@@ -20,7 +20,7 @@ include '../elements/header.php';
         <label for='mot_de_passe'>Votre mot de passe :*
         <?php
                 if (!empty($erreurs['mot_de_passe'])) {
-                    echo "<j class='erreur'>{$erreurs['mot_de_passe']}</j></br>";
+                    echo "<p class='error'>{$erreurs['mot_de_passe']}</p></br>";
                 }
         ?>
         <input type='password' name='mot_de_passe' id='mot_de_passe'/>
@@ -28,7 +28,7 @@ include '../elements/header.php';
     </div>
     <?php
             if (!empty($erreurs['code_pin'])) {
-                echo "<j class='erreur'>{$erreurs['code_pin']}</j></br>";
+                echo "<p class='error'>{$erreurs['code_pin']}</p></br>";
             }
     ?>
 

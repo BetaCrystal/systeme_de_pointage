@@ -33,6 +33,11 @@ input, select{
     margin-top: 4px;
 }
 
+input:hover,
+select:hover{
+    cursor: pointer;
+}
+
 label{
     display: flex;
     flex-direction: column;
@@ -41,7 +46,8 @@ label{
     flex: none;
 }
 
-.login-form{
+.login-form,
+.ticket-form{
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -53,13 +59,32 @@ label{
     border-radius: 15px;
 }
 
-.login-form .row{
-    display: flex;
-    flex-direction: row;
+.ticket-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: fit-content;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px mediumpurple;
+    margin-top: 15px;
+    align-items: center;
+    padding: 6vh 0;
+    border-radius: 15px;
 }
 
-.ticket-form{
+li {
+  list-style-type: none;
+  margin: 15px 0;
+}
+
+ul{
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.login-form .row,
+.ticket-form .row{
     display: flex;
+    flex-direction: row;
 }
 
 button{
@@ -71,12 +96,33 @@ button{
     color: white;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: indigo;
+}
+
+.error{
+    color: darkred;
+}
+
+@media (max-width: 768px){
+    .ticket-list{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 425px){
-  .login-form .row{
+  .login-form .row,
+  .ticket-form .row{
     flex-direction: column;
   }
 
   label{
     margin: 20px 7vw;
+  }
+
+  .ticket-list{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
